@@ -13,7 +13,6 @@
   "errorChangingPassword": "Error changing password",
   "footerlogo": "Footer Logo",
   "forgotPassword": "Forgot password?",
-  "forgotPasswordError": "Something went wrong. Please try again.",
   "forgotPasswordInstructions": "Enter your username and we will send you a password reset link.",
   "forgotPasswordSuccessMessage": "If an account with that username exists, a password reset email has been sent.",
   "forgotPasswordSuccessTitle": "Request received",
