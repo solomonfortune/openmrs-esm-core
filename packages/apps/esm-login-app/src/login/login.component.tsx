@@ -262,7 +262,7 @@ const Login: React.FC = () => {
               )}
               <Button
                 kind="ghost"
-                onClick={() => navigate('/login/forgot-password')}
+                onClick={() => navigate('/login/reset')}
                 className={styles.forgotPasswordLink}
               >
                 {t('forgotPassword', 'Forgot password?')}
