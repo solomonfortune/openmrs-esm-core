@@ -45,7 +45,7 @@ const RequestReset: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <Tile className={styles.loginCard}>
+      <Tile className={styles.loginCard} style={{ paddingBottom: '2rem' }}>
         <Button
           kind="ghost"
           size="sm"
@@ -112,9 +112,9 @@ const RequestReset: React.FC = () => {
           </div>
         </form>
 
-        <p style={{ marginTop: '1.5rem', fontSize: '0.875rem', color: '#525252' }}>
-          {t('needHelp', 'Need help?')}{' '}
-          {t('contactSiteAdministrator', 'Contact the site administrator')}
+        <p style={{ marginTop: '1.5rem', marginBottom: '2rem', fontSize: '0.875rem', color: '#525252' }}>
+            {t('needHelp', 'Need help?')}{' '}
+            {t('contactSiteAdministrator', 'Contact the site administrator')}
         </p>
       </Tile>
       <Footer />
