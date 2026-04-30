@@ -14,7 +14,12 @@ const ResetSent: React.FC = () => {
 
   // Mask email if it looks like an email address
   const maskedAddress = usernameOrEmail.includes('@')
-    ? usernameOrEmail.replace(/(.{2})(.*)(@.*)/, '$1***$3')
+    ? (() => {
+        const atIndex = usernameOrEmail.indexOf('@');
+        const local = usernameOrEmail.slice(0, atIndex);
+        const domain = usernameOrEmail.slice(atIndex);
+        return local.slice(0, 2) + '***' + domain;
+        })()
     : usernameOrEmail;
 
   return (
